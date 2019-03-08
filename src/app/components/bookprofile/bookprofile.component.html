@@ -1,0 +1,48 @@
+
+<br><br>
+<div class="page" align="center">
+  <div class="page__demo"> 
+    <label class="field a-field a-field_a3 page__field">
+      <input class="field__input a-field__input" [(ngModel)]="user.u_age" placeholder="e.g. 25">
+      <span class="a-field__label-wrap">
+        <span class="a-field__label">Age</span>
+      </span>
+    </label>
+    <br> 
+    <label class="field a-field a-field_a3 page__field">
+      <input class="field__input a-field__input" [(ngModel)]="user.u_ntitle" placeholder="e.g. miss">
+      <span class="a-field__label-wrap">
+        <span class="a-field__label">Name Title</span>
+      </span>
+    </label>
+    <br> 
+    <label class="field a-field a-field_a3 page__field">
+      <input class="field__input a-field__input" [(ngModel)]="user.u_name" placeholder="e.g. Phatarisa Maneewan">
+      <span class="a-field__label-wrap">
+        <span class="a-field__label">Name and Surname</span>
+      </span>
+    </label>
+    <br> 
+    <label class="field a-field a-field_a3 page__field">
+      <input class="field__input a-field__input" [(ngModel)]="user.u_tel" placeholder="e.g. 0864018698">
+      <span class="a-field__label-wrap">
+        <span class="a-field__label">Telephone Number</span>
+      </span>
+    </label>
+    <br> 
+    <label class="field a-field a-field_a3 page__field">
+      <input class="field__input a-field__input" [(ngModel)]="user.u_email" placeholder="e.g. Phatarisa1998@gmail.com">
+      <span class="a-field__label-wrap">
+        <span class="a-field__label">Email</span>
+      </span>
+    </label><br>
+    <label class="field a-field a-field_a3 page__field">
+      <input class="field__input a-field__input" [(ngModel)]="user.flight_no" placeholder="e.g. 00001">
+      <span class="a-field__label-wrap">
+        <span class="a-field__label">Flight number</span>
+      </span>
+    </label>
+    <br><br>
+    <button type="button" class="btn btn-primary" (click)="addUser()" routerLink="/usercomplete">เพิ่มข้อมูลส่วนตัวของคุณ</button>
+  </div>
+</div>

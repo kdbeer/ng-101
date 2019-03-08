@@ -1,0 +1,54 @@
+<h1 style="text-align:center" >ข้อมูลของคุณถูกบันทึกเรียบร้อยแล้ว!</h1>
+<br><br><br><br><br>
+<div class="container">
+<table align="center">
+  <thead>
+    <tr>
+    <th>คำนำหน้า</th>
+    <th>เลขที่การเดินทาง</th>
+    <th>ชื่อ-สกุล</th>
+    <th>อายุ</th>
+    <th>อีเมลล์</th>
+    <th>เบอร์โทรศัพท์</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users" (click)="selectusercomplete(user)">
+    <td>{{user.u_ntitle}}</td>
+    <td>{{user.flight_no}}</td>
+    <td>{{user.u_name}}</td>
+    <td>{{user.u_age}}</td>
+    <td>{{user.u_email}}</td>
+    <td>{{user.u_tel}}</td>
+  </tr></tbody>
+</table>
+<br><br><br>
+<div class="container" align="center">
+  <h3>แก้ไขข้อมูลของท่าน</h3>
+  <div class="form-inline">
+    <label for="booking-origin">title:</label>
+    <input type="text" class="form-control" [(ngModel)]="user.u_ntitle">
+  </div>
+  <div class="form-inline">
+    <label for="booking-destination">flight number:</label>
+    <input type="text" class="form-control" [(ngModel)]="user.flight_no">
+  </div>
+  <div class="form-inline">
+      <label for="booking-seat01">Name and Surname:</label>
+      <input type="text" class="form-control" [(ngModel)]="user.u_name">
+  </div>
+  <div class="form-inline">
+        <label for="booking-seat02">Age:</label>
+        <input type="text" class="form-control" [(ngModel)]="user.u_age">
+  </div>
+  <div class="form-inline">
+      <label for="booking-03">Email:</label>
+      <input type="text" class="form-control" [(ngModel)]="user.u_email">
+  </div>
+  <div class="form-inline">
+      <label for="booking-takeoff_time">Tel:</label>
+      <input type="text" class="form-control" [(ngModel)]="user.u_tel">
+   </div>
+</div>
+</div>
+

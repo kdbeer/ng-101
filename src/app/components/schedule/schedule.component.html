@@ -1,0 +1,33 @@
+
+
+<br><br><br><br>
+
+
+
+
+<div class="container"><br>
+  <div class="row"> 
+      <div class="col-sm-2"><label for="search-booking-destination"><h4>search by destination</h4></label></div> 
+      <div class="col-sm-8"><input type="destination" class="form-control" id="search booking-destination" #destination></div>
+      <div class="col-sm-2"><button class="btn btn-info" (click)="searchDestination(destination.value)">search</button></div>
+    </div><br>
+<table>
+    <tr>
+      <th>ต้นทาง</th>
+      <th>ปลายทาง</th>
+      <th>ราคาที่นั่ง</th>
+      <th>เวลาขึ้นเครื่อง</th>
+      <th>ระยะเวลาการเดินทาง</th>
+      <th>เวลาลงจอด</th>
+    </tr>
+
+    <tr *ngFor="let booking of bookings">
+      <td>{{booking.origin}}</td>
+      <td>{{booking.destination}}</td>
+      <td>{{booking.seat01}}</td>
+      <td>{{booking.takeoff_time}}</td>
+      <td>{{booking.onplane_time}}</td>
+      <td>{{booking.landing_time}}</td>
+    </tr>
+  </table>
+</div>    
